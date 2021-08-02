@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display+SC');
+
+.section--header {
+
+    width: 73%;
+    border-radius: 6px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+
+
+    .header__navbar {
+        padding: 10px;
+        max-width: 800px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+
+        .navbar__link {
+
+            color: #231E39;
+            background-color: #FEBB0B;
+            border-radius: 3px;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 3px 7px;
+            flex-grow: 1;
+            text-align: center;
+            padding: 1em;
+            position: relative;
+            text-decoration: none;
+            margin-right: 10px;
+
+            &:visited {
+                color: #231E39;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 1px;
+                left: 0;
+                right: 0;
+                height: 5px;
+                transform: scaleX(0);
+                background: #231E39;
+                transition: 0.7s transform cubic-bezier(0.06, 0.9, 0.28, 1);
+
+
+
+
+            }
+
+            &:hover::after {
+                transform: scaleX(1)
+            }
+
+
+
+        }
+    }
+}
